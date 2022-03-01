@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txt_proyecto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Proyecto Integrador"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_labo"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/txt_labo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Laboratorio IV"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_soporte"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/txt_metodos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Metodos Agiles"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_fisica"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/txt_ingenieriads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Ingenieria de Software"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_metodos"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/txt_Probabilidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Probabilidad y Estadistica"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/txt_soporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Soporte de Software"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_ingenieriads"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/txt_orientacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Orientacion IV"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Quimica"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/txt_ingles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Ingles IV"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_orientacion"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/txt_fisica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Fisica IV"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_ingles"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/txt_Quimica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Quimica IV"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Probabilidad"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="calcular"
+        android:text="Calcular"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_proyecto"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/tv_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Estatusdel alumno"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/btn"
+        tools:layout_editor_absoluteX="0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
